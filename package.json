@@ -1,6 +1,6 @@
 {
   "name": "roister",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": ":beer: using riot by jade and coffeescript",
   "keywords": [],
   "main": "build/index.js",
@@ -32,6 +32,5 @@
   },
   "bin": {
     "roister": "bin/roister"
-  },
-  "main": "build/index.js"
+  }
 }
