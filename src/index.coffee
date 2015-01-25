@@ -1,1 +1,1 @@
-console.log 'it works'
+exports.compile = require './compile'
