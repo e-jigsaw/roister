@@ -106,6 +106,7 @@ result = compile '''
     p fuga
     script.
       # something
+'''
 ```
 
 # Requirements
