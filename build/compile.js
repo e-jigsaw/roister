@@ -15,10 +15,10 @@
     coffeeCode = $('script').eq(0).text();
     jsCode = coffee.compile(coffeeCode, {
       bare: true
-    }).replace(/\n/g, '\n  ').replace(/\n\s\s$/, '');
+    });
     $('script').remove();
     tagName = $.root().children()[0].tagName;
-    return "riot.tag('" + tagName + "', '" + ($.html()) + "', function(opt){\n  " + jsCode + "\n})";
+    return "riot.tag('" + tagName + "', '" + ($.html()) + "', function(opt){\n" + jsCode + "\n})";
   };
 
 }).call(this);

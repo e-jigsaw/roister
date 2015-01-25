@@ -10,8 +10,6 @@ module.exports = (input)->
   coffeeCode = $('script').eq(0).text()
   jsCode = coffee.compile coffeeCode,
     bare: true
-  .replace /\n/g, '\n  '
-  .replace /\n\s\s$/, ''
 
   $('script').remove()
 
@@ -19,6 +17,6 @@ module.exports = (input)->
 
   """
     riot.tag('#{tagName}', '#{$.html()}', function(opt){
-      #{jsCode}
+    #{jsCode}
     })
   """
