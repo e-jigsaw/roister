@@ -22,5 +22,8 @@
     "gulp-espower": "^0.10.0",
     "gulp-mocha": "^2.0.0",
     "power-assert": "^0.10.0"
+  },
+  "dependencies": {
+    "minimist": "^1.1.0"
   }
 }
