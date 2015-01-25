@@ -62,14 +62,50 @@ Roister write with [jade](http://jade-lang.com/) and [CoffeeScript](http://coffe
 
 ## Global install
 
-```
+```sh
 % npm install roister -g
 ```
 
 ## Local install
 
-```
+```sh
 % npm install roister -S
+```
+
+# API
+
+## CLI
+
+```sh
+% roister --help
+
+  Usage: roister [options]
+
+  Options:
+
+    -h, --help            output usage information
+    -V, --version         output the version number
+    -c, --compile <path>  compile file
+    -p, --print           print code
+    -o, --output <path>   output file
+```
+
+```sh
+% roister -c hoge.jade
+% cat hoge.js
+...
+```
+
+## Module
+
+```coffee
+{compile} = require 'roister'
+
+result = compile '''
+  hoge
+    p fuga
+    script.
+      # something
 ```
 
 # Requirements
@@ -78,13 +114,13 @@ Roister write with [jade](http://jade-lang.com/) and [CoffeeScript](http://coffe
 
 # Build
 
-```
+```sh
 % npm run build
 ```
 
 # Test
 
-```
+```sh
 % npm test
 ```
 
