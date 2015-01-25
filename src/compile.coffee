@@ -14,9 +14,10 @@ module.exports = (input)->
   $('script').remove()
 
   tagName = $.root().children()[0].tagName
+  htmlElement = $.root().children().eq(0).html()
 
   """
-    riot.tag('#{tagName}', '#{$.html()}', function(opt){
+    riot.tag('#{tagName}', '#{htmlElement}', function(opts){
     #{jsCode}
     });
   """

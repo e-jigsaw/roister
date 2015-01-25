@@ -8,7 +8,7 @@
   coffee = require('coffee-script');
 
   module.exports = function(input) {
-    var $, coffeeCode, compiler, html, jsCode, tagName;
+    var $, coffeeCode, compiler, html, htmlElement, jsCode, tagName;
     compiler = jade.compile(input);
     html = compiler();
     $ = cheerio.load(html);
@@ -18,7 +18,8 @@
     });
     $('script').remove();
     tagName = $.root().children()[0].tagName;
-    return "riot.tag('" + tagName + "', '" + ($.html()) + "', function(opt){\n" + jsCode + "\n});";
+    htmlElement = $.root().children().eq(0).html();
+    return "riot.tag('" + tagName + "', '" + htmlElement + "', function(opts){\n" + jsCode + "\n});";
   };
 
 }).call(this);
