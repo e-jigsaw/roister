@@ -18,7 +18,7 @@
     });
     $('script').remove();
     tagName = $.root().children()[0].tagName;
-    return "riot.tag('" + tagName + "', '" + ($.html()) + "', function(opt){\n" + jsCode + "\n})";
+    return "riot.tag('" + tagName + "', '" + ($.html()) + "', function(opt){\n" + jsCode + "\n});";
   };
 
 }).call(this);

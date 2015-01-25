@@ -18,5 +18,5 @@ module.exports = (input)->
   """
     riot.tag('#{tagName}', '#{$.html()}', function(opt){
     #{jsCode}
-    })
+    });
   """
