@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Riot can pre-process jade and coffee-script. Use original riot-compiler.
+
 roister [![npm version](https://badge.fury.io/js/roister.svg)](http://badge.fury.io/js/roister) [![dependency Status](https://david-dm.org/e-jigsaw/roister/status.svg)](https://david-dm.org/e-jigsaw/roister) [![devDependency Status](https://david-dm.org/e-jigsaw/roister/dev-status.svg)](https://david-dm.org/e-jigsaw/roister#info=devDependencies)
 =======
 
